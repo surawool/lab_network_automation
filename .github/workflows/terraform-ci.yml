@@ -30,3 +30,6 @@ jobs:
 
       - name: Validate configuration
         run: terraform validate
+
+      - name: Run Terraform plan
+        run: terraform plan
