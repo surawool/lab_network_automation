@@ -9,3 +9,8 @@ resource "terraform_data" "ci_demo" {
 output "lab_message" {
   value = terraform_data.ci_demo.output
 }
+
+resource "local_file" "report" {
+    filename = "report.txt"
+    content = "managed by terraform"
+}
