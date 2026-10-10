@@ -11,6 +11,6 @@ output "lab_message" {
 }
 
 resource "local_file" "report" {
-    filename = "report.txt"
-    content = "managed by terraform"
+  filename = "report.txt"
+  content  = "managed by terraform"
 }
